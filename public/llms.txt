@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+סדנת עץ בוטיק המשלבת אומנות יד מסורתית עם טכנולוגיית CNC מתקדמת. יוצרים פריטי עץ ייחודיים, קרשי חיתוך מעוצבים, רהיטים ומתנות מרגשות בהזמנה אישית.
+
+### אודות
+https://example.com/about
+פגשו את שחר, הילה, אלמוג ולירון - המשפחה שמאחורי הסדנה. גלו את האהבה לעץ, תשומת הלב לפרטים והקשר הרגשי שהופך כל פריט ליצירה עם נשמה וסיפור משלה.
+
+### גלריה
+https://example.com/gallery
+גלריה מרהיבה של יצירות עץ: קרשי חיתוך עם חריטה אישית, קערות מגולפות, רהיטים בוטיק ופריטי עיצוב יוקרתיים מעולמות הבשר, הויסקי, הבירות והיין. כל יצירה ייחודית.
+
+### צור קשר
+https://example.com/contact
+מוכנים ליצירה משלכם? צרו קשר להזמנת מתנות עץ מעוצבות בהזמנה אישית, קרשי חיתוך מיוחדים או כל פריט עץ ייחודי. נשמח להפוך את החזון שלכם למציאות מרגשת.
+
+### Products
+https://example.com/products
+המוצרים שלנו - הסדנה של שחר
+
+### Cart
+https://example.com/cart
+עגלת הקניות שלך
+
+### Checkout
+https://example.com/checkout
+תשלום
+
+### Login
+https://example.com/login
+התחברות לקוחות
+
+### Account
+https://example.com/account
+החשבון שלי
+
+### Order Success
+https://example.com/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - הסדנה של שחר
+
+### Category
+https://example.com/category/:slug
+מוצרים - הסדנה של שחר
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
