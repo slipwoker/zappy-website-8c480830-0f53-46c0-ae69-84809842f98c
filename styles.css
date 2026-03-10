@@ -9326,6 +9326,378 @@ body.accessibility-widget-visible ._access-menu {
   }
 }
 
+/* Added Component Styles */
+/* Custom Gifts Section Styles */
+.custom-gifts-section {
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  padding: 4rem 1.5rem;
+  font-family: 'Playfair Display', 'Canela', Georgia, serif;
+  direction: rtl;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-gifts-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  background: var(--gradient-primary);
+  opacity: 0.05;
+  border-radius: 50%;
+  transform: translate(30%, -30%);
+  pointer-events: none;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  animation: fadeInUp 0.8s ease-out;
+}
+
+.section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Products Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.product-card {
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.8s ease-out backwards;
+}
+
+.product-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.product-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.product-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-card.featured {
+  border: 2px solid transparent;
+  background-image: linear-gradient(white, white), var(--gradient-primary);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.product-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  background: #f5f5f5;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.product-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(18, 20, 22, 0.9);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.product-info {
+  padding: 1.5rem;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.product-features {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  background: var(--gradient-primary);
+  color: #ffffff;
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Features Section */
+.features-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+  padding: 3rem 0;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 1.25rem;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+  transform: rotate(360deg);
+}
+
+.feature-icon svg {
+  width: 30px;
+  height: 30px;
+  color: #ffffff;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.feature-text {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  background: linear-gradient(135deg, var(--primary) 0%, #2a2d31 100%);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  color: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cta-title {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.cta-text {
+  font-size: clamp(1rem, 2.5vw, 1.125rem);
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--gradient-primary);
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(24, 197, 214, 0.3);
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(24, 197, 214, 0.4);
+}
+
+.cta-button svg {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover svg {
+  transform: translateX(-5px);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .custom-gifts-section {
+    padding: 3rem 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .features-section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2rem 0;
+  }
+
+  .cta-section {
+    padding: 2rem 1.5rem;
+    border-radius: 16px;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-info {
+    padding: 1.25rem;
+  }
+
+  .product-name {
+    font-size: 1.25rem;
+  }
+
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .custom-gifts-section {
+    background: white;
+    padding: 2rem;
+  }
+
+  .cta-button {
+    display: none;
+  }
+
+  .product-overlay {
+    display: none;
+  }
+}
+
 /* ========== RTL MOBILE NAVBAR FIX (zappy-rtl-mobile-fix) ========== */
 /* High-specificity rules to ensure RTL positioning wins over any [lang="en"] conflicts */
 /* For RTL sites: hamburger on RIGHT, phone on LEFT (mirror of LTR layout) */
